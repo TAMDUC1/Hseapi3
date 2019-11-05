@@ -1,0 +1,14 @@
+C:\Users\Tam\source\repos\HseApi\HseApi\bin\Release\netcoreapp2.1\HseApi.deps.json
+C:\Users\Tam\source\repos\HseApi\HseApi\bin\Release\netcoreapp2.1\HseApi.runtimeconfig.json
+C:\Users\Tam\source\repos\HseApi\HseApi\bin\Release\netcoreapp2.1\HseApi.runtimeconfig.dev.json
+C:\Users\Tam\source\repos\HseApi\HseApi\bin\Release\netcoreapp2.1\HseApi.dll
+C:\Users\Tam\source\repos\HseApi\HseApi\bin\Release\netcoreapp2.1\HseApi.pdb
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.csprojAssemblyReference.cache
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.csproj.CoreCompileInputs.cache
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.RazorAssemblyInfo.cache
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.RazorAssemblyInfo.cs
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.AssemblyInfoInputs.cache
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.AssemblyInfo.cs
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.RazorTargetAssemblyInfo.cache
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.dll
+C:\Users\Tam\source\repos\HseApi\HseApi\obj\Release\netcoreapp2.1\HseApi.pdb

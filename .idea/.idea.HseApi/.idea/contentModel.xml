@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="HseApi" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="HseAuditsController.cs" t="Include" />
+          <e p="HseRisksController.cs" t="Include" />
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Hse.csproj" t="Include" />
+        <e p="HseApi.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Access.cs" t="Include" />
+          <e p="CmsContactForm.cs" t="Include" />
+          <e p="CmsDocument.cs" t="Include" />
+          <e p="CoreAccess.cs" t="Include" />
+          <e p="CoreCategory.cs" t="Include" />
+          <e p="CoreFileAuditUpload.cs" t="Include" />
+          <e p="CoreFileUpload.cs" t="Include" />
+          <e p="CoreOption.cs" t="Include" />
+          <e p="CoreUser.cs" t="Include" />
+          <e p="FailedLogin.cs" t="Include" />
+          <e p="FileUpload.cs" t="Include" />
+          <e p="hse_dev_2019Context.cs" t="Include" />
+          <e p="HseAudit.cs" t="Include" />
+          <e p="HseInvestigationReport.cs" t="Include" />
+          <e p="HseQr.cs" t="Include" />
+          <e p="HseQuarterlyReport.cs" t="Include" />
+          <e p="HseRisk.cs" t="Include" />
+          <e p="Post.cs" t="Include" />
+          <e p="RememberToken.cs" t="Include" />
+          <e p="Role.cs" t="Include" />
+          <e p="SuccessLogin.cs" t="Include" />
+          <e p="Translation.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="HseApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="FolderProfile.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="HseApi.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_HseApi.-795459864.00" t="ExcludeRecursive" />
+  </component>
+</project>
