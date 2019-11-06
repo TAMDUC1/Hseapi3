@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aff63c41-8ba8-472f-890e-32155ab3a422" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HseApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HseApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HseApi/obj/Debug/netcoreapp2.1/HseApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HseApi/obj/Debug/netcoreapp2.1/HseApi.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HseApi/obj/HseApi.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HseApi/obj/HseApi.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HseApi/obj/HseApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/HseApi/obj/HseApi.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HseApi/obj/HseApi.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/HseApi/obj/HseApi.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HseApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/HseApi/obj/project.assets.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +113,8 @@
       <workItem from="1572574539010" duration="1864000" />
       <workItem from="1572915543916" duration="1583000" />
       <workItem from="1572937464072" duration="8000" />
+      <workItem from="1572937566878" duration="636000" />
+      <workItem from="1572956688458" duration="934000" />
     </task>
     <servers />
   </component>
