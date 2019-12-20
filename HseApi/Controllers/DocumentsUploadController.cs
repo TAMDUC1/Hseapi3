@@ -15,13 +15,16 @@ namespace HseApi.Controllers
     [ApiController]
     public class DocumentsUploadController : ControllerBase
     {
+        private readonly hse_dev_2019Context _context;
+
         [HttpPost, DisableRequestSizeLimit]
         public IActionResult PostDocumentsUpload()
         {
-
+            var pathToDb = "";
+            var fileName = "";
             try
             {
-                string dir = @"D:\source\HSE.PVN.VN_V2_2019\content\uploads";
+                string dir = @"C:\source\HSE.PVN.VN_V2_2019\content\uploads";
                 Directory.SetCurrentDirectory(dir);
                 // var file = Request.Form.Files[0];
                 //   Request.Form
@@ -36,6 +39,7 @@ namespace HseApi.Controllers
 
                     // var folderName = Path.Combine("Resources", "Images");
                     // var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                    pathToDb = Path.Combine(year,month,date);
                     var pathToSave = Path.Combine(paths);
                     if (!Directory.Exists(pathToSave))
                     {
@@ -47,7 +51,7 @@ namespace HseApi.Controllers
 
                     if (File.Length > 0)
                     {
-                        var fileName = ContentDispositionHeaderValue.Parse(File.ContentDisposition).FileName.Trim('"');
+                        fileName = ContentDispositionHeaderValue.Parse(File.ContentDisposition).FileName.Trim('"');
                         var fullPath = Path.Combine(pathToSave, fileName);
                         //   var dbPath = Path.Combine(folderName, fileName);
 
@@ -57,6 +61,7 @@ namespace HseApi.Controllers
                         }
 
                       //  return Ok(new { fullPath });
+                      // 
                     }
 
                     else
@@ -64,7 +69,16 @@ namespace HseApi.Controllers
                         return BadRequest();
                     }
                 }
-                return Ok();
+                // return  JsonResult({ });
+                return Ok(new { 
+                                data = "",
+                                module = "hse",
+                                workflow ="",
+                                model = "hse_audit",
+                                model_uuid= "",
+                                path  = pathToDb,
+                                name = fileName
+                                }) ;
 
             }
             catch (Exception ex)
@@ -74,3 +88,4 @@ namespace HseApi.Controllers
         }
     }
 }
+
