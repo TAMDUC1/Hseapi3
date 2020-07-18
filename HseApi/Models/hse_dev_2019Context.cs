@@ -42,7 +42,7 @@ namespace HseApi.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseNpgsql("Server=117.6.162.49;Database=hse_dev_2019;User Id=postgres;Password=GppmDev@0!9;");
+                optionsBuilder.UseNpgsql("Host=117.6.162.49;Database=hse_dev_2019;Username=postgres;Password=GppmDev@0!9");
             }
         }
 
@@ -341,6 +341,10 @@ namespace HseApi.Models
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasColumnName("password")
+                    .HasColumnType("character varying(100)");
+
+                entity.Property(e => e.PasswordMobile)
+                    .HasColumnName("password_mobile")
                     .HasColumnType("character varying(100)");
 
                 entity.Property(e => e.Status)
@@ -779,6 +783,14 @@ namespace HseApi.Models
                 entity.Property(e => e.Data)
                     .HasColumnName("data")
                     .HasColumnType("jsonb");
+
+                entity.Property(e => e.Phone)
+                    .HasColumnName("phone")
+                    .HasColumnType("character varying");
+
+                entity.Property(e => e.Phone2)
+                    .HasColumnName("phone2")
+                    .HasColumnType("character varying(100)");
 
                 entity.Property(e => e.UpdatedBy).HasColumnName("updated_by");
 

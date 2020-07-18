@@ -19,5 +19,6 @@ namespace HseApi.Models
         public DateTime? UpdatedOn { get; set; }
         public DateTime? LoggedOn { get; set; }
         public string LoggedIp { get; set; }
+        public string PasswordMobile { get; set; }
     }
 }

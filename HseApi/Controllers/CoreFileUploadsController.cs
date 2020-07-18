@@ -149,13 +149,19 @@ namespace HseApi.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
-            }
+            } 
 
             var coreFileUpload = await _context.CoreFileUpload.FindAsync(id);
             if (coreFileUpload == null)
             {
                 return NotFound();
             }
+
+            // DELETE FILE
+
+
+
+            // DELETE RECORD
 
             _context.CoreFileUpload.Remove(coreFileUpload);
             await _context.SaveChangesAsync();

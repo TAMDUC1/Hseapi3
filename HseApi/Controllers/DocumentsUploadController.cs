@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using HseApi.Models;
 using System.Net.Http.Headers;
+using Microsoft.Extensions.Configuration;
 
 namespace HseApi.Controllers
 {
@@ -16,6 +17,12 @@ namespace HseApi.Controllers
     public class DocumentsUploadController : ControllerBase
     {
         private readonly hse_dev_2019Context _context;
+        private readonly IConfiguration _configuration;
+
+        public DocumentsUploadController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
 
         [HttpPost, DisableRequestSizeLimit]
         public IActionResult PostDocumentsUpload()
@@ -24,7 +31,8 @@ namespace HseApi.Controllers
             var fileName = "";
             try
             {
-                string dir = @"C:\source\HSE.PVN.VN_V2_2019\content\uploads";
+                string path = _configuration.GetSection("uploadsPath")?.Value;
+                string dir = Path.Combine(path + "uploads"); //\\10.1.8.76\c$\inetpub\wwwroot\www\content
                 Directory.SetCurrentDirectory(dir);
                 // var file = Request.Form.Files[0];
                 //   Request.Form
@@ -32,8 +40,8 @@ namespace HseApi.Controllers
                 {
                     DateTime myDateTime = DateTime.Now;
                     string year = myDateTime.Year.ToString();
-                    string month = myDateTime.Month.ToString();
-                    string date = myDateTime.Day.ToString();
+                    string month = myDateTime.Month.ToString("00");
+                    string date = myDateTime.Day.ToString("00");
                     string[] paths = new string[] { Directory.GetCurrentDirectory(), year, month, date };
 
 
